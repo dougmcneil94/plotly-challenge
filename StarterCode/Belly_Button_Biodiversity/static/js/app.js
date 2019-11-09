@@ -52,7 +52,7 @@ function buildCharts(sample) {
       yaxis: { title: "Sample Volume" }
     };
     Plotly.newplot('bubble', data, layout);
-  }
+  });
   // @TODO: Build a Pie Chart
   // HINT: You will need to use slice() to grab the top 10 sample_values,
   // otu_ids, and labels (10 each).
@@ -63,7 +63,7 @@ function buildCharts(sample) {
   }];
 
   Plotly.newPlot('pie', data, layout);
-});
+};
 
 function init() {
   // Grab a reference to the dropdown select element
